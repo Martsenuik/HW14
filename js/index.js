@@ -89,15 +89,16 @@ const users = [
 //Отримати масив імен всіх користувачів 
 // (поле name).
 
-// const users = [
-//     { id: 1, name: 'Alina' },
-//     { id: 2, name: 'Anna' },
-//     { id: 3, name: 'Liza' }
-// ]
-// const names = users.map(user => user.name)
-// console.log(names);
+// const getUserNames = (users) => {
+//    //твій код
+//   const usersNames = users.map((el) => {
+//     return el.name;
+//   });
+//   return usersNames;
+// };
+// console.log(getUserNames(users));
 
-//*\\\\\\\\\\ завдання 2\\\\\\\\\\\\\
+//?\\\\\\\\\\ завдання 2\\\\\\\\\\\\\
 //Отримати масив об'єктів користувачів за кольором очей 
 // (поле eyeColor).
 
@@ -114,10 +115,15 @@ const users = [
 // console.log(blueEyedUsers);
 
 
-//?\\\\\\\\\\ завдання 3\\\\\\\\\\\\\
-//Отримати масив імен користувачів за статтю 
+//*\\\\\\\\\\ завдання 3\\\\\\\\\\\\\
+// Отримати масив імен користувачів за статтю 
 // (поле gender).
 
+// const getUsersWithGender = (users, gender) => {
+//   return users.filter(user => user.gender === gender);
+// };
+
+// console.log(getUsersWithGender(users, 'male')); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
 
 
 
@@ -125,17 +131,11 @@ const users = [
 //Отримати масив тільки неактивних користувачів 
 // (поле isActive).
 
-// const users = [
-//     { name: 'Alina', isActive: true },
-//     { name: 'Liza', isActive: true },
-//     { name: 'Anna', isActive: false },
-//     { name: 'Margo', isActive: true }
-// ];
 // const inactiveUsers = users.filter(user => !user.isActive);
 // console.log(inactiveUsers);
 
 
-//*\\\\\\\\\\ завдання 5\\\\\\\\\\\\\
+//?\\\\\\\\\\ завдання 5\\\\\\\\\\\\\
 //Отримати користувача (не масив) по email
 //  (поле email, він унікальний).
 
@@ -147,7 +147,32 @@ const users = [
 // у вікову категорію від min до max років (поле age).
 
 
+// const getUsersWithAge = (users, min, max) => {
+//   // твій код
 
+//   const usersNameAgeCategory = users.filter(({name, age }) => 
+//     {
+//       //  const {id,
+//       //     name,
+//       //     email,
+//       //     eyeColor,
+//       //     friends,
+//       //     isActive,
+//       //     balance,
+//       //     skills,
+//       //     gender,
+//       //     age} = user;
+//       if (age > min && age < max) {
+//         return name;
+//       }
+//     }
+//   );
+//   return usersNameAgeCategory;
+// };
+
+// console.log(getUsersWithAge(users, 20, 30)); // [об'єкт Ross Vazquez, об'єкт Elma Head, об'єкт Carey Barr]
+
+// console.log(getUsersWithAge(users, 30, 40));
 
 
 
