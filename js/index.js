@@ -98,20 +98,15 @@ const users = [
 // };
 // console.log(getUserNames(users));
 
-//?\\\\\\\\\\ завдання 2\\\\\\\\\\\\\
+//*\\\\\\\\\\ завдання 2\\\\\\\\\\\\\
 //Отримати масив об'єктів користувачів за кольором очей 
 // (поле eyeColor).
 
-// const users = [
-//     { name: 'Alina', eyeColor: 'blue' },
-//     { name: 'Lisa', eyeColor: 'brown' },
-//     { name: 'Anna', eyeColor: 'blue' }
-// ];
-
-// function getUserEyeColor(users, color) {
-//     return users.filter(user => user.eyeColor === color)
+// function getUsersByEyeColor(users, color) {
+//   return users.filter(user => user.eyeColor === color);
 // }
-// const blueEyedUsers = getUserEyeColor(users, 'blue');
+
+// const blueEyedUsers = getUsersByEyeColor(users, 'blue');
 // console.log(blueEyedUsers);
 
 
@@ -135,11 +130,16 @@ const users = [
 // console.log(inactiveUsers);
 
 
-//?\\\\\\\\\\ завдання 5\\\\\\\\\\\\\
+//*\\\\\\\\\\ завдання 5\\\\\\\\\\\\\
 //Отримати користувача (не масив) по email
 //  (поле email, він унікальний).
 
+// function getUserByEmail(users, email) {
+//   return users.find(user => user.email === email);
+// }
 
+// const user = getUserByEmail(users, 'sharlenebush@tubesys.com');
+// console.log(user);
 
 
 //*\\\\\\\\\\ завдання 6\\\\\\\\\\\\\
